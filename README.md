@@ -60,32 +60,10 @@ Este proyecto utiliza **Python** y sus principales bibliotecas:
 5. ✅ Crear visualizaciones comprensibles para stakeholders
 6. ✅ Documentar hallazgos y recomendaciones
 
-## 📁 Estructura del Proyecto
-
-```
-Challenge-Telecome-X/
-├── README.md
-├── data/
-│   ├── raw/              # Datos originales
-│   └── processed/        # Datos procesados
-├── notebooks/
-│   ├── 01_eda.ipynb      # Análisis exploratorio
-│   └── 02_etl.ipynb      # Proceso ETL
-├── scripts/
-│   ├── etl_pipeline.py   # Scripts de ETL
-│   └── utils.py          # Funciones auxiliares
-└── results/
-    ├── visualizations/   # Gráficos y visualizaciones
-    └── reports/          # Reportes finales
-```
 
 ## 🚀 Cómo Empezar
 
-1. Clonar el repositorio
-2. Instalar dependencias: `pip install -r requirements.txt`
-3. Explorar los notebooks en la carpeta `notebooks/`
-4. Ejecutar el pipeline ETL
-5. Analizar los resultados
+1. 
 
 ## 📈 Próximos Pasos
 
@@ -98,8 +76,8 @@ Challenge-Telecome-X/
 
 ## 👨‍💻 Autor
 
-**SalvatoreSisay** - Challenge Telecome X
+**SalvatoreSisay** - Challenge Telecome X**
 
 ---
 
-**¡Manos a la obra! 💪 Vamos a descubrir qué retiene y qué hace que los clientes se vayan.
+**¡Manos a la obra! 💪 Vamos a descubrir qué retiene y qué hace que los clientes se vayan.**
