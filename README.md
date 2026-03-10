@@ -65,7 +65,7 @@ Este proyecto utiliza **Python 3.8+** y las siguientes bibliotecas:
 - pip (gestor de paquetes de Python)
 - Git
 
-### Pasos de Instalación
+### Pasos de Instalación en un entorno local (sin uso de google colab)
 
 1. **Clonar el repositorio:**
    ```bash
@@ -79,22 +79,12 @@ Este proyecto utiliza **Python 3.8+** y las siguientes bibliotecas:
    source venv/bin/activate  # En Windows: venv\Scripts\activate
    ```
 
-3. **Instalar las dependencias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## 📋 Dependencias
 
 Para instalar todas las dependencias requeridas, ejecute:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter notebook
-```
-
-O use el archivo `requirements.txt`:
-```bash
-pip install -r requirements.txt
 ```
 
 ### Versiones Recomendadas
@@ -125,84 +115,11 @@ Si hay scripts Python en la carpeta `src/`:
 ```bash
 python src/nombre_del_script.py
 ```
-
-### Estructura del Proyecto
-```
-Challenge-Telecome-X/
-│
-├── notebooks/                    # Jupyter Notebooks con análisis
-│   ├── 01_EDA_Exploracion.ipynb
-│   ├── 02_ETL_Transformacion.ipynb
-│   └── 03_Analisis_Churn.ipynb
-│
-├── data/                         # Datos crudos y procesados
-│   ├── raw/                     # Datos sin procesar
-│   └── processed/               # Datos limpios y transformados
-│
-├── src/                          # Código fuente reutilizable
-│   └── funciones_utiles.py
-│
-├── output/                       # Resultados y visualizaciones
-│   ├── graficas/
-│   └── reportes/
-│
-├── requirements.txt              # Dependencias del proyecto
-├── README.md                     # Este archivo
-└── .gitignore
-```
-
-## 🛠️ Solución de Problemas y Errores Comunes
-
-### 1. **Error: "ModuleNotFoundError: No module named 'pandas'"**
-**Solución:**
-```bash
-pip install pandas
-# O reinstale todas las dependencias
-pip install -r requirements.txt --upgrade
-```
-
-### 2. **Error: "Jupyter command not found"**
-**Solución:**
-```bash
-pip install jupyter notebook
-```
-
-### 3. **Error de Kernel en Jupyter Notebook**
-**Solución:**
-- Reinicie el kernel: Kernel → Restart
-- O ejecute:
-```bash
-python -m ipykernel install --user
-```
-
-### 4. **Problemas de Compatibilidad de Python**
-**Solución:**
-- Verifique la versión de Python:
-  ```bash
-  python --version
-  ```
-- Asegúrese de usar Python 3.8 o superior
-- Use un entorno virtual para evitar conflictos
-
-### 5. **Error: "FileNotFoundError: No such file or directory"**
-**Solución:**
-- Verifique que esté en el directorio correcto del proyecto
-- Compruebe que el archivo de datos existe en la ruta especificada
-- Use rutas relativas desde la raíz del proyecto
-
-### 6. **Bajo rendimiento o problemas de memoria**
-**Solución:**
-- Para datasets grandes, procese datos en chunks
-- Libere memoria con `del variable_grande` y `gc.collect()`
-- Considere usar tipos de datos optimizados en pandas
-
-### 7. **Problemas con visualizaciones en Jupyter**
-**Solución:**
-```bash
-# Agregue esto al inicio del notebook
-%matplotlib inline
-import matplotlib.pyplot as plt
-```
+### Opción 3: Ejecutar en Google Colaboratoy
+   - Abrir google colaboratoy
+   - iniciar con tu cuenta de google
+   - cargar los datos de la API de la URL indicado en el notebook
+   - Ejecutar todo el notebook
 
 ## 📝 Notas Importantes
 
@@ -226,4 +143,4 @@ Para preguntas o problemas relacionados con el proyecto, puede:
 
 ---
 
-**¡Gracias por usar este proyecto! 🚀 Juntos descubrimos qué retiene y qué hace que los clientes se vayan.
+**¡Gracias por usar este proyecto! 🚀 Juntos descubrimos qué retiene y qué hace que los clientes se vayan.**
